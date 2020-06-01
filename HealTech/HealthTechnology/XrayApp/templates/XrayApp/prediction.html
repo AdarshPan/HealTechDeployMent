@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <ul><a>Home</a></ul>
+    <ul><a>About Me</a></ul>
+</nav>
+    <hr>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <div class ="container">
+        <div class="jumbotron">
+    <h2>Welcome to the Pneumonia Detection Tool </h2>
+
+
+
+            <h8>This tool can be used to detect Pneumonia by looking at a Xray of the Patient. </h8>
+<p>The accuracy of this Tool is approx 97.9%.This tool is an Artificial Intelligence Model trained on Chest Xray Images of 10 million  pneumonia positive and pneumonia negative patients and does a great job in distinguishing between them. </p>
+
+
+        </div>
+
+
+    <hr>
+
+
+
+
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+    <body>
+     <!--<div class="text">-->
+     <!--<h10>Please Upload An Image</h10></div>-->
+     <form enctype="multipart/form-data" method="post" >
+           <input type="file" name="myfile">
+           <button type="submit" class="btn btn-primary">Predict</button>
+               {% csrf_token %}
+
+
+     </form>
+
+{{result}}
+
+     <hr>
+<p>The supported Image types are JPG,JPEG,PNG,GIF and DICOM. DICOM Is the Preferred type.</p>
+<hr>
+</body>
+</div>
+</div>
+</div>
+<hr>
+<div class="jumbotron">
+    <p>This site and idea both are still under development!!. A lot more to come from this site for the betterment of the community.</p>
+</div>
+</head>
+
+</html>
