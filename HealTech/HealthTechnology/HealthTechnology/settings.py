@@ -61,6 +61,7 @@ ROOT_URLCONF = 'HealthTechnology.urls'
 TEMPLATES_DIR=os.path.join(BASE_DIR,'templates')
 # STATIC_DIR=os.path.join(BASE_DIR,'static')
 # MEDIA_DIR=os.path.join(BASE_DIR,"media")
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -78,6 +79,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'HealthTechnology.wsgi.application'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Database
