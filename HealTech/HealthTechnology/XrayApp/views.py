@@ -16,8 +16,8 @@ print("Model Loading......")
 model=load_model('XrayApp/my_model.h5')
 print("model loaded sucessfully")
 
-class_dict={'0':'Yes. The Patient is Pneumonia Positive According to the Model.....The Confidence Score out of 1 is = ',
-            '1':'No! The Patient Is Pneumonia Negative According to the Model!!....The Confidence Score out of 1is  = '}
+class_dict={'0':'Yes. The Patient is COVID Positive According to the Model.....The Confidence Score out of 1 is = ',
+            '1':'No! The Patient Is COVID Negative According to the Model!!....The Confidence Score out of 1is  = '}
 
 class_names = list(class_dict.values())
 
